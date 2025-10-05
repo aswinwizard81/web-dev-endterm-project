@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    background-image: url("https://t4.ftcdn.net/jpg/02/15/94/83/360_F_215948377_kgIhNUy4X0iYsyUfYd9KKIViSPOxclbC.jpg");
+}
+.boxes {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border-radius: 50%;
+}      
+.boxes:first-child {
+    background-color: blue;
+    position: relative;
+    transform: translateX(100px);
+    
+
+}
+.boxes:last-child {
+    background-color: white;
+    width: 50px;
+    height: 50px; 
+    position: relative;
+    animation: orbit 4s linear infinite; 
+    transform-origin: -150px center;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg) translateX(150px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(150px) rotate(-360deg);
+    }
+}
+
+</style>
+<body>
+    <div class="container">
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+    </div>
+</body>
+</html>

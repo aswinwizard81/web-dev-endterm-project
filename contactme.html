@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aswin | Contact Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        #contact-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .contact-card {
+            display: flex;
+            flex-direction: row;
+            background-color: #1f1f1f;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0, 188, 212, 0.15);
+            max-width: 1000px;
+            width: 100%;
+            overflow: hidden;
+            animation: fadeInContainer 1s ease-in-out;
+        }
+
+        .contact-info {
+            flex: 1;
+            padding: 3rem;
+            background-color: #121212;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-info h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #00bcd4;
+        }
+
+        .contact-info p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            max-width: 400px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .social-links a {
+            color: #e0e0e0;
+            font-size: 1.8rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #00bcd4;
+            transform: translateY(-5px) scale(1.1);
+        }
+
+        .contact-form {
+            flex: 1;
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-group {
+            width: 100%;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+            color: #bbb;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            background-color: #2a2a2a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            color: #e0e0e0;
+            font-size: 1rem;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #00bcd4;
+            box-shadow: 0 0 0 3px rgba(0, 188, 212, 0.3);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+    
+            min-height: 120px;
+        }
+
+        .send-message-btn {
+            background-color: #00bcd4;
+            color: #121212;
+            padding: 0.9rem 2.5rem;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        .send-message-btn:hover {
+            background-color: #80deea;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 188, 212, 0.4);
+        }
+
+    
+        @media (max-width: 768px) {
+            .contact-card {
+                flex-direction: column;
+            
+            }
+
+            .contact-info,
+            .contact-form {
+                padding: 2rem;
+                text-align: center;
+                align-items: center;
+                
+            }
+
+            .contact-info h2 {
+                font-size: 2.2rem;
+                text-align: center;
+            }
+
+            .contact-info p {
+                max-width: 100%;
+                text-align: center;
+            }
+
+            .social-links {
+                justify-content: center;
+            }
+
+            .send-message-btn {
+                width: auto;
+                
+                min-width: 200px;
+                
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="https://i.postimg.cc/m28nNGGm/Gemini-Generated-Image-r53yjjr53yjjr53y.png" alt="Aswin Logo" class="logo">
+            <h1>Aswin</h1>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> Home </a></li>
+                <li><a href="Aboutme.html"><i class="fa-solid fa-user"></i> About Me </a></li>
+                <li><a href="project.html"><i class="fa-solid fa-laptop-code"></i> Projects</a></li>
+                <li><a href="contactme.html"><i class="fa-solid fa-envelope"></i> Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact-page" class="page-content">
+        <div class="contact-card">
+            <div class="contact-info">
+                <h2>Let's Talk</h2>
+                <p>To discuss a project, collaboration, or just say hello, feel free to fill out the form or reach out
+                    directly.</p>
+                <div class="social-links">
+                    <a href="https://github.com/aswinwizard81" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/aswin-babu-998a0436b" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://instagram.com/ft.appuz_81" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto:aswin.25bcs10596@sst.scaler.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://x.com/@Aswinbabu2024" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form action="YOUR_FORM_SUBMISSION_URL" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Your Phone (Optional)</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="send-message-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright © 2025 Aswin | All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
